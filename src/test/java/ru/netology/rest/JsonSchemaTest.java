@@ -13,7 +13,7 @@ public class JsonSchemaTest {
                 .when()
                 .get("/demo/accounts")
                 .then()
-                .statusCode(300)
+                .statusCode(200)
 
                 .body(matchesJsonSchemaInClasspath("accounts.schema.json"));
 
